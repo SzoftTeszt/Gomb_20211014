@@ -6,6 +6,12 @@ void setup() {
 }
 
 void loop() {
-  Serial.println(digitalRead(3));
-
+ 
+  if (digitalRead(3)==0)
+  {
+   delay(100);
+   if (digitalRead(3)==0) {Serial.println("Megnyomtak! Üdv, a Gomb!");}
+   // delay(millisec);  
+  }
+  
 }
